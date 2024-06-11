@@ -20,6 +20,7 @@ CIUDAD buscar(int id);
 int menu(int op);
 void principal();
 void pedirDatos();
+void mostrarDatos();
 
 void agregar(CIUDAD *c)
 {
@@ -124,5 +125,14 @@ void pedirDatos()
     cout << "Registro agregado...\n";
 }
 
+void mostrarDatos()
+{
+    for(int i = 0; i < pos; i++)
+    {
+        cout << "ID: " << ciudades[i].id << endl;
+        cout << "Nombre: " << ciudades[i].nombre << endl;
+        cout << "Descripcion " << ciudades[i].descripcion << endl;
+    }
+}
 
 
